@@ -14,7 +14,7 @@ header {
   height: 260px;
   background-size: cover;
   background-position: 50% 50%;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 header ul {
@@ -37,12 +37,59 @@ header a {
 header li > a:hover {
   color:royalblue;
 }
-
-.current {
-  border-bottom: 4px solid royalblue;
+/* Navigation Menu */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+.menu {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
+.menu * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.4em 0.8em;
+  padding: 0;
+}
+.menu a {
+  padding: 0 0.7em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  left: 15%;
+  right: 15%;
+  top: 0;
+  bottom: 0;
+  border-left: 3px solid #27ae60;
+  border-right: 3px solid #27ae60;
+}
+.menu a:hover,
+.menu .current a {
+  color: #ffffff;
+}
+.menu a:hover:before,
+.menu .current a:before {
+  opacity: 1;
+  left: 0;
+  right: 0;
+}
+/* //////////////////////////////////// */
 
-/* ////////////////////////////// */
 .container {
   width: 820px;
   margin: 0 auto;
