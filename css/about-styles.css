@@ -1,0 +1,28 @@
+.profile {
+  position: relative;
+  margin: 0 3em;
+  padding: 25px 10px 7px;
+  height: 2em;
+  border-bottom: solid 2px #666666;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.profile .title {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  padding: 0 9px;
+  height: 25px;
+  width: 100px;
+  line-height: 25px;
+  font-size: 15px;
+  background: #666666;
+  color: #ffffff;
+  font-family: Verdana, sans-serif;
+}
+
+.profile p {
+  margin: 0;
+  padding: 0;
+}
