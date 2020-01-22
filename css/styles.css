@@ -17,26 +17,6 @@ header {
   /* margin-bottom: 60px; */
 }
 
-header ul {
-  margin: 0;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-header li {
-  display: inline-block;
-  padding: 4px 8px;
-  font-size: 12px;
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header li > a:hover {
-  color:royalblue;
-}
 /* Navigation Menu */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 .menu {
@@ -132,8 +112,19 @@ header li > a:hover {
   margin-bottom: 30px;
 }
 
-.feature {
+.feature:nth-of-type(odd) {
   overflow: hidden;
+  transition : 1.5s;
+  transform : translate(-150%, 0);
+}
+.feature:nth-of-type(even) {
+  overflow: hidden;
+  transition : 1.5s;
+  transform : translate(150%, 0);
+}
+.feature.show {
+  /* 優先順位をあげる important */
+  transform: translate(0, 0) !important; 
 }
 
 section {
