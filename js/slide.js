@@ -3,6 +3,7 @@
 // DOMの構築が完了したら発火するイベント
 //　Document Object Model
 document.addEventListener('DOMContentLoaded', () => {
+    alert(window.innerWidth);
 
     // スライド要素取得
     var slideConts = document.querySelectorAll('.feature');
@@ -44,4 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
-

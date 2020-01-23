@@ -119,7 +119,7 @@ header {
 
   }
 }
-@media screen and (min-width:1000px){
+@media screen and (min-width:1200px){
   /*600px以上で適用する内容*/
   .feature:nth-of-type(odd) {
     overflow: hidden;
