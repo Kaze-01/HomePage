@@ -4,17 +4,17 @@ body{
     margin: 0;
     background-image: linear-gradient(-200deg, #3531b4, #7b6dc0, #adaccb, #d8eed3);
     background-size: cover;
+    width: 100%;
 }
 
 header {
-  /* background-color: pink; */
   text-align: right;
   padding: 10px;
   background-image:url(../img/Header.jpg);
+  width: 100%;
   height: 260px;
   background-size: cover;
   background-position: 50% 50%;
-  /* margin-bottom: 60px; */
 }
 
 /* Navigation Menu */
@@ -124,7 +124,7 @@ header {
 }
 .feature.show {
   /* 優先順位をあげる important */
-  transform: translate(0, 0) !important; 
+  transform: translate(0, 0) !important;
 }
 
 section {
