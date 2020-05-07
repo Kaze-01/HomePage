@@ -4,4 +4,4 @@
 HTML CSS めちゃ苦手なので勉強していきます...
 Github Pages で公開中．
 
-http://kaze-01.github.io/HomePage/
+http://shin-shin-01.github.io/HomePage/
